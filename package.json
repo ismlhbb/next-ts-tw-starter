@@ -1,22 +1,57 @@
 {
   "name": "next-ts-starter",
+  "description": "Next Typescript Starter",
   "private": true,
+  "author": "ismlhbb <ismail.habibi2104@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "eslint --fix",
+    "lint:strict": "eslint --max-warnings=0 './*/**/*.{js,jsx,ts,tsx,css,scss,md,json}'",
+    "tsc": "tsc",
+    "prettier:check": "prettier -c './*/**/*.{js,jsx,ts,tsx,css,scss,md,json}'",
+    "format": "prettier -w './*/**/*.{js,jsx,ts,tsx,css,scss,md,json}' --config ./.prettierrc.js",
+    "prepare": "husky install"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.3.4",
+    "clsx": "^1.1.1",
     "next": "12.0.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "sass": "^1.43.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "^14.1.0",
+    "@commitlint/config-conventional": "^14.1.0",
     "@types/node": "16.11.6",
     "@types/react": "17.0.33",
-    "eslint": "7",
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "@typescript-eslint/parser": "^5.3.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "7.32.0",
     "eslint-config-next": "12.0.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^11.2.6",
+    "postcss": "^8.3.11",
+    "prettier": "^2.4.1",
+    "tailwindcss": "^2.2.19",
     "typescript": "4.4.4"
+  },
+  "lint-staged": {
+    "./*/**/*.{js,jsx,ts,tsx}": [
+      "eslint --max-warnings=0",
+      "prettier -w"
+    ],
+    "./*/**/*.{json,css,scss,md}": [
+      "prettier -w"
+    ]
   }
 }
