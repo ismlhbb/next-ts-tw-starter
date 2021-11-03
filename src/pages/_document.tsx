@@ -68,9 +68,9 @@ class MyDocument extends Document {
           {/* Favicons */}
           <meta name='msapplication-TileColor' content='#EE424D' />
           <meta name='theme-color' content='#EE424D' />
-          {/* <meta name='msapplication-TileImage' content='/favicon/ms-icon-144x144.png' /> 
+          {/* <meta name='msapplication-TileImage' content='/favicon/ms-icon-144x144.png' />
           <link rel='apple-touch-icon' sizes='180x180' href='/icons/apple-touch-icon.png'/>
-          <link rel='shortcut icon' href='/app-icon.png' /> 
+          <link rel='shortcut icon' href='/app-icon.png' />
           <link rel='manifest' href='/manifest.json' /> */}
         </Head>
         <body>
