@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+import { Pokemon } from 'models/Example';
 import { Meta } from 'models/Meta';
 import { ReduxUtils } from 'utils/redux';
 
@@ -8,13 +9,13 @@ import { editExampleData, getExampleData } from './example.thunks';
 export interface ExampleState {
   currentRunningOperation: string;
   meta: Meta;
-  exampleData: unknown;
+  exampleData: Pokemon[] | unknown;
 }
 
 const initialState: ExampleState = {
   currentRunningOperation: 'idle',
   meta: { code: '', message: '' },
-  exampleData: null,
+  exampleData: [],
 };
 
 const SLICE_NAME = '@example';
