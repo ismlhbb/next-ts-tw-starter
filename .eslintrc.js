@@ -16,7 +16,6 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': 'off',
     'prettier/prettier': [
       'error',
       {
@@ -34,24 +33,16 @@ module.exports = {
           ['^@?\\w', '^\\u0000'],
           // {s}css files
           ['^.+\\.s?css$'],
-          // app
-          ['^app'],
-          // components
-          ['^components'],
-          // constants
-          ['^constants'],
-          // layouts
-          ['^layouts'],
-          // models
-          ['^models'],
-          // pages
-          ['^pages'],
-          // services
-          ['^services'],
-          // styles
-          ['^styles'],
-          // utils
-          ['^utils'],
+          [
+            '^app',
+            '^components',
+            '^constants',
+            '^layouts',
+            '^models',
+            '^services',
+            '^styles',
+            '^utils',
+          ],
           // relative paths up until 3 level
           [
             '^\\./?$',
@@ -63,7 +54,6 @@ module.exports = {
             '^\\.\\./\\.\\./\\.\\./?$',
             '^\\.\\./\\.\\./\\.\\.(?!/?$)',
           ],
-          ['^@/types'],
           // other that didnt fit in
           ['^'],
         ],
