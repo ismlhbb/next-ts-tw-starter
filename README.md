@@ -1,19 +1,21 @@
 # Next + Typescript + Tailwind + Redux Starter
 
-🔥 An opinionated Next with Typescript, Tailwind and Redux Starter.
-
 ![[object Object]](https://socialify.git.ci/ismlhbb/next-ts-tw-starter/image?language=1&owner=1&pattern=Charlie%20Brown&theme=Dark)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https://github.com/ismlhbb/next-ts-tw-starter) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ismlhbb/next-ts-tw-starter)
+[![CodeFactor](https://www.codefactor.io/repository/github/ismlhbb/next-ts-tw-starter/badge)](https://www.codefactor.io/repository/github/ismlhbb/next-ts-tw-starter)
+
+This is an opinionated [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), added with [**TypeScript**](https://www.typescriptlang.org), [**TailwindCSS**](https://tailwindcss.com) and [**Redux**](https://redux-toolkit.js.org/) setup.
 
 ## Demo
 
 [See Example](https://next-ts-tw-starter.vercel.app/)
+
 ## Getting Started
 
 ### Installation
 
-You can either click `Use this template` button on this repository and clone the repo or directly from your terminal:
+You can either click [**Use this template**](https://github.com/ismlhbb/next-ts-tw-starter/generate) button on this repository and clone the repo or directly from your terminal:
 
 ```bash
 npx degit ismlhbb/next-ts-tw-starter <APP_NAME>
@@ -26,7 +28,8 @@ yarn dev
 #or
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. 
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## References
 
