@@ -8,12 +8,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ./**/**/*.{js,jsx,ts,tsx}",
-    "lint:fix": "eslint --fix ./**/**/*.{js,jsx,ts,tsx}",
-    "lint:strict": "eslint --max-warnings=0 ./**/**/*.{js,jsx,ts,tsx,css,scss,md,json}",
+    "lint": "eslint ./src/**/*.{js,jsx,ts,tsx}",
+    "lint:fix": "eslint --fix ./src/**/*.{js,jsx,ts,tsx}",
+    "lint:strict": "eslint --max-warnings=0 ./src/**/*.{js,jsx,ts,tsx,css,scss,md,json}",
     "tsc": "tsc",
-    "prettier:check": "prettier -c ./**/**/*.{js,jsx,ts,tsx,css,scss,md,json}",
-    "format": "prettier -w ./**/**/*.{js,jsx,ts,tsx,css,scss,md,json} --config ./.prettierrc.js",
+    "prettier:check": "prettier -c ./src/**/*.{js,jsx,ts,tsx,css,scss,md,json}",
+    "format": "prettier -w ./src/**/*.{js,jsx,ts,tsx,css,scss,md,json} --config ./.prettierrc.js",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -50,11 +50,11 @@
     "typescript": "4.4.4"
   },
   "lint-staged": {
-    "./**/**/*.{js,jsx,ts,tsx}": [
+    "./src/**/*.{js,jsx,ts,tsx}": [
       "eslint --max-warnings=0",
       "prettier -w"
     ],
-    "./**/**/*.{json,css,scss,md}": [
+    "./src/**/*.{json,css,scss,md}": [
       "prettier -w"
     ]
   }
