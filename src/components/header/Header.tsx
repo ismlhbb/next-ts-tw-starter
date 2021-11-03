@@ -9,7 +9,7 @@ export default function Header() {
     <header className='sticky top-0 z-50 bg-white shadow'>
       <div className='flex items-center justify-between h-14 layout'>
         <UnstyledLink href='/' className='font-bold hover:text-gray-600'>
-          N+TS+TW+RTK
+          Next Starter
         </UnstyledLink>
         <nav>
           <ul className='flex items-center justify-between space-x-4'>

@@ -4,12 +4,16 @@ import { Provider } from 'react-redux';
 import 'styles/globals.scss';
 
 import { store } from 'app/store';
+import PageHead from 'components/PageHead';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Provider store={store}>
-      <Component {...pageProps} />
-    </Provider>
+    <>
+      <PageHead isIndex={true} />
+      <Provider store={store}>
+        <Component {...pageProps} />
+      </Provider>
+    </>
   );
 }
 
