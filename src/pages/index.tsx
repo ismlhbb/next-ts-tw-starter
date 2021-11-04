@@ -31,11 +31,10 @@ const Home: NextPage = () => {
         <p className='mt-2 text-sm text-gray-800'>
           <CustomLink href={Data.projectLink}>See the repository</CustomLink>
         </p>
-
-        <ButtonLink className='my-4' href='/example'>
-          Fetch example
-        </ButtonLink>
-        <div className='flex justify-around w-64 align-center'>
+        <div className='flex justify-center gap-1 mt-2 align-center'>
+          <ButtonLink href='/example'>Fetch example</ButtonLink>
+        </div>
+        <div className='flex justify-center gap-1 mt-2 align-center'>
           <UnstyledLink href={Data.vercelDeployUrl}>
             <Image
               width={92}
@@ -53,11 +52,9 @@ const Home: NextPage = () => {
             />
           </UnstyledLink>
         </div>
-
-        <code className='p-2 mt-2 bg-gray-200 rounded-lg'>
+        <code className='p-2 bg-gray-200 rounded-lg'>
           npx degit ismlhbb/next-ts-tw-starter {'<YOUR_APP_NAME>'}
         </code>
-
         <ButtonLink
           className='mt-2'
           variant='primary'
@@ -65,7 +62,6 @@ const Home: NextPage = () => {
         >
           Use this template
         </ButtonLink>
-
         <footer className='absolute text-gray-600 bottom-2'>
           © {new Date().getFullYear()} By{' '}
           <CustomLink href={Data.profileLink}>{Data.profileName}</CustomLink>
