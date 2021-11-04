@@ -21,6 +21,16 @@ You can either click [**Use this template**](https://github.com/ismlhbb/next-ts-
 npx degit ismlhbb/next-ts-tw-starter <APP_NAME>
 ```
 
+### Setup Environment Variable
+
+Before run the project, you have create a `.env` or `.env.local` file in the root of your project.
+
+```bash
+cp .env.example .env.local
+#or
+cp .env.example .env
+```
+
 ### Run Locally
 
 ```bash
