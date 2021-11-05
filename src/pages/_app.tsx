@@ -5,6 +5,7 @@ import 'styles/globals.scss';
 
 import { store } from 'app/store';
 import PageHead from 'components/PageHead';
+import PageLoadingBar from 'components/PageLoadingBar';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -12,6 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <PageHead isIndex={true} />
       <Provider store={store}>
         <Component {...pageProps} />
+        <PageLoadingBar />
       </Provider>
     </>
   );

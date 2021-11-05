@@ -1,11 +1,32 @@
+import { useRouter } from 'next/router';
+import NProgress from 'nprogress';
 import * as React from 'react';
 
-const PageLoadingBar: React.FC = () => {
-  return (
-    <div className='flex flex-col items-center justify-center min-h-screen min-w-screen'>
-      <h4>Loading...</h4>
-    </div>
-  );
-};
+export default function PageLoadingBar() {
+  const router = useRouter();
+  const progress = NProgress.configure({
+    showSpinner: false,
+  });
 
-export default PageLoadingBar;
+  React.useEffect(() => {
+    const start = (_: string, { shallow }: { shallow: boolean }) => {
+      if (!shallow) {
+        progress.start();
+      }
+    };
+
+    const done = () => {
+      progress.done();
+    };
+
+    router.events.on('routeChangeStart', start);
+    router.events.on('routeChangeComplete', done);
+    router.events.on('routeChangeError', done);
+    return () => {
+      router.events.off('routeChangeStart', start);
+      router.events.off('routeChangeComplete', done);
+      router.events.off('routeChangeError', done);
+    };
+  }, [router]);
+  return <></>;
+}
