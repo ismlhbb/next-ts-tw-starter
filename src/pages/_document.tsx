@@ -6,16 +6,7 @@ import Document, {
   NextScript,
 } from 'next/document';
 
-const defaultMeta = {
-  title: process.env.NEXT_PUBLIC_APPLICATION_NAME,
-  siteName: process.env.NEXT_PUBLIC_APPLICATION_NAME,
-  description:
-    'An opinionated Next.js project, added with TypeScript, TailwindCSS and Redux setup.',
-  type: 'website',
-  robots: 'follow, index',
-  keywords:
-    'next, react, tailwindcss, redux, typescript, javascript, starter, template, boilerplate',
-};
+import { defaultMeta } from 'constants/next-seo';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -44,8 +35,6 @@ class MyDocument extends Document {
           <meta name='mobile-web-app-capable' content='yes' />
           <meta name='theme-color' content='#EE424D' />
           <meta name='keyword' content={defaultMeta.keywords} />
-          <meta name='description' content={defaultMeta.description} />
-          <meta name='robots' content={defaultMeta.robots} />
           {/* Apple */}
           <meta name='apple-mobile-web-app-capable' content='yes' />
           <meta name='apple-mobile-web-app-title' content={defaultMeta.title} />
@@ -53,25 +42,17 @@ class MyDocument extends Document {
             name='apple-mobile-web-app-status-bar-style'
             content='default'
           />
-          {/* Open Graph */}
-          <meta property='og:title' content={defaultMeta.title} />
-          <meta property='og:site_name' content={defaultMeta.siteName} />
-          <meta property='og:description' content={defaultMeta.description} />
-          <meta property='og:type' content={defaultMeta.type} />
-          {/* Twitter */}
-          <meta name='twitter:card' content='summary_large_image' />
-          <meta name='twitter:title' content={defaultMeta.title} />
-          <meta name='twitter:description' content={defaultMeta.description} />
           {/* ItemProp */}
           <meta itemProp='name' content={defaultMeta.title} />
           <meta itemProp='description' content={defaultMeta.description} />
           {/* Favicons */}
-          <meta name='msapplication-TileColor' content='#EE424D' />
-          <meta name='theme-color' content='#EE424D' />
-          {/* <meta name='msapplication-TileImage' content='/favicon/ms-icon-144x144.png' />
-          <link rel='apple-touch-icon' sizes='180x180' href='/icons/apple-touch-icon.png'/>
-          <link rel='shortcut icon' href='/app-icon.png' />
-          <link rel='manifest' href='/manifest.json' /> */}
+          {/* <link
+            rel='apple-touch-icon'
+            sizes='180x180'
+            href='/favicons/apple-touch-icon.png'
+          />
+          <link rel='shortcut icon' href='/favicons/app-icon.png' /> */}
+          <link rel='manifest' href='/manifest.json' />
         </Head>
         <body>
           <Main />
