@@ -16,7 +16,7 @@ export const defaultMeta = {
 };
 
 export const defaultSEOConfig: DefaultSeoProps = {
-  title: defaultMeta.title,
+  title: undefined,
   titleTemplate: `${defaultMeta.title} | %s`,
   defaultTitle: defaultMeta.title,
   description: defaultMeta.description,
@@ -25,6 +25,7 @@ export const defaultSEOConfig: DefaultSeoProps = {
     url: defaultMeta.url,
     title: defaultMeta.title,
     description: defaultMeta.description,
+    type: defaultMeta.type,
     images: [
       {
         url: defaultMeta.image,
