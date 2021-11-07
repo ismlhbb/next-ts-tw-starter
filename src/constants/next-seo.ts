@@ -1,5 +1,7 @@
 import { DefaultSeoProps } from 'next-seo';
 
+import { ogImage } from 'utils/ogImage';
+
 export const defaultMeta = {
   title: process.env.NEXT_PUBLIC_APPLICATION_NAME,
   siteName: process.env.NEXT_PUBLIC_APPLICATION_NAME,
@@ -26,7 +28,7 @@ export const defaultSEOConfig: DefaultSeoProps = {
     description: defaultMeta.description,
     images: [
       {
-        url: defaultMeta.image,
+        url: ogImage('next-ts-tw-starter'),
         alt: 'ismlhbb/next-ts-tw-starter og-image',
       },
     ],

@@ -9,7 +9,7 @@ export const ogImage = (text: string, options?: OgImageOptions) => {
   const defaultOptions: OgImageOptions = {
     theme: 'dark',
     fontSize: '100px',
-    images: 'https://next-ts-tw-starter.vercel.app/next-black-logo.svg',
+    images: 'https://next-ts-tw-starter.vercel.app/nextjs-black-logo.svg',
     images2: 'https://next-ts-tw-starter.vercel.app/ts.svg',
   };
 
