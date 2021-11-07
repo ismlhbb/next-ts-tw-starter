@@ -11,7 +11,7 @@ export const ogImage = (text: string, options?: OgImageOptions) => {
     fontSize: '100px',
     images:
       'https://assets.vercel.com/image/upload/front/assets/design/nextjs-white-logo.svg',
-    images2: 'https://next-ts-tw-starter.vercel.app/images/ts.svg',
+    images2: 'https://next-ts-tw-starter.vercel.app/ts.svg',
   };
 
   const finalOptions: OgImageOptions = {
