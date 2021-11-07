@@ -9,9 +9,10 @@ export const ogImage = (text: string, options?: OgImageOptions) => {
   const defaultOptions: OgImageOptions = {
     theme: 'dark',
     fontSize: '100px',
-    images:
-      'https://assets.vercel.com/image/upload/front/assets/design/nextjs-white-logo.svg',
-    images2: 'https://next-ts-tw-starter.vercel.app/ts.svg',
+    images: encodeURIComponent(
+      'https://assets.vercel.com/image/upload/front/assets/design/nextjs-white-logo.svg'
+    ),
+    images2: encodeURIComponent('https://next-ts-tw-starter.vercel.app/ts.svg'),
   };
 
   const finalOptions: OgImageOptions = {
