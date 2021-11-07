@@ -1,9 +1,0 @@
-{
-  "short_name": "next-ts-tw-starter",
-  "name": "next-ts-tw-starter.vercel.app",
-  "lang": "en",
-  "start_url": "/",
-  "dir": "ltr",
-  "display": "standalone",
-  "prefer_related_applications": false
-}
