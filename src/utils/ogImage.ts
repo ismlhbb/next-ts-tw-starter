@@ -9,8 +9,9 @@ export const ogImage = (text: string, options?: OgImageOptions) => {
   const defaultOptions: OgImageOptions = {
     theme: 'dark',
     fontSize: '100px',
-    images: 'https://next-ts-tw-starter.vercel.app/nextjs-white-logo.svg',
-    images2: 'https://next-ts-tw-starter.vercel.app/ts.svg',
+    images:
+      'https://assets.vercel.com/image/upload/front/assets/design/nextjs-white-logo.svg',
+    images2: 'https://next-ts-tw-starter.vercel.app/images/ts.svg',
   };
 
   const finalOptions: OgImageOptions = {
@@ -18,10 +19,8 @@ export const ogImage = (text: string, options?: OgImageOptions) => {
     ...options,
   };
 
-  // eslint-disable-next-line no-extra-boolean-cast
-  if (!!finalOptions.images2) {
+  if (finalOptions.images2) {
     return `https://og-image-ismlhbb.vercel.app/ismlhbb%2F**${text}**.png?theme=${finalOptions.theme}&md=1&fontSize=${finalOptions.fontSize}&images=${finalOptions.images}&images=${finalOptions.images2}`;
-  } else {
-    return `https://og-image-ismlhbb.vercel.app/ismlhbb%2F**${text}**.png?theme=${finalOptions.theme}&md=1&fontSize=${finalOptions.fontSize}&images=${finalOptions.images}`;
   }
+  return `https://og-image-ismlhbb.vercel.app/ismlhbb%2F**${text}**.png?theme=${finalOptions.theme}&md=1&fontSize=${finalOptions.fontSize}&images=${finalOptions.images}`;
 };

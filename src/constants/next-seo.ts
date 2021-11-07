@@ -12,8 +12,7 @@ export const defaultMeta = {
   keywords:
     'next, react, tailwindcss, redux, typescript, javascript, starter, template, boilerplate',
   url: 'https://next-ts-tw-starter.vercel.app',
-  image:
-    'https://og-image-ismlhbb.vercel.app/ismlhbb%2F**next-ts-tw-starter**.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-white-logo.svg&images=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fremojansen%2Flogo.ts%40master%2Fts.svg',
+  image: ogImage('next-ts-tw-starter'),
 };
 
 export const defaultSEOConfig: DefaultSeoProps = {
@@ -28,7 +27,7 @@ export const defaultSEOConfig: DefaultSeoProps = {
     description: defaultMeta.description,
     images: [
       {
-        url: ogImage('next-ts-tw-starter'),
+        url: defaultMeta.image,
         alt: 'ismlhbb/next-ts-tw-starter og-image',
       },
     ],
