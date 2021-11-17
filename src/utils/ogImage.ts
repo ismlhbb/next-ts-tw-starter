@@ -9,14 +9,14 @@ type OgImageOptions = Partial<{
 
 export const ogImage = (text: string, options?: OgImageOptions) => {
   const defaultOptions: OgImageOptions = {
-    ogServiceUrl: 'https://og-image-ismlhbb.vercel.app',
+    ogServiceUrl: 'https://og.ismlhbb.xyz',
     theme: 'dark',
     fontSize: '100px',
     author: encodeURIComponent('ismlhbb/'),
     images: encodeURIComponent(
       'https://assets.vercel.com/image/upload/front/assets/design/nextjs-white-logo.svg'
     ),
-    images2: encodeURIComponent('https://next-ts-tw-starter.vercel.app/ts.svg'),
+    images2: encodeURIComponent('https://next-ts-tw.ismlhbb.xyz/ts.svg'),
   };
 
   const finalOptions: OgImageOptions = {
