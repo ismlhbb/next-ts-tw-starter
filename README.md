@@ -10,7 +10,7 @@ This is an opinionated [Next.js](https://nextjs.org/) project bootstrapped with 
 
 ## Demo
 
-[See Example](https://next-ts-tw-starter.vercel.app/)
+[See Example](https://next-ts-tw.ismlhbb.xyz/)
 
 ## Getting Started
 
