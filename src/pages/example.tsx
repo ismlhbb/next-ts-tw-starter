@@ -2,7 +2,7 @@ import { NextSeo } from 'next-seo';
 import * as React from 'react';
 
 import Example from 'components/example/Example';
-import { defaultMeta } from 'constants/next-seo';
+import { defaultMeta } from 'config/next-seo';
 import HomeLayout from 'layouts/home/HomeLayout';
 
 export default function ExamplePage() {

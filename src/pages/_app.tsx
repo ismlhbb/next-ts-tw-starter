@@ -6,7 +6,7 @@ import 'styles/globals.scss';
 
 import { store } from 'app/store';
 import PageLoadingBar from 'components/PageLoadingBar';
-import { defaultSEOConfig } from 'constants/next-seo';
+import { defaultSEOConfig } from 'config/next-seo';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
