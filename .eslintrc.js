@@ -37,9 +37,11 @@ module.exports = {
           [
             '^app',
             '^components',
+            '^config',
             '^constants',
             '^layouts',
             '^models',
+            '^pages',
             '^services',
             '^styles',
             '^utils',
