@@ -9,7 +9,7 @@ import HomeLayout from 'layouts/home/HomeLayout';
 const Data = {
   projectLink: 'https://github.com/ismlhbb/next-ts-tw-starter',
   projectName: 'Next + Typescript + Tailwind + Redux Starter',
-  profileLink: 'https://ismailhabibi.netlify.app',
+  profileLink: 'https://ismlhbb.xyz',
   profileName: 'Ismail Habibi Herman',
   vercelDeployUrl:
     'https://vercel.com/import/git?s=https://github.com/ismlhbb/next-ts-tw-starter',
