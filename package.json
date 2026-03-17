@@ -5,8 +5,8 @@
   "author": "ismlhbb <ismail.habibi2104@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
     "start": "next start",
     "lint": "eslint ./src/**/*.{js,jsx,ts,tsx}",
     "lint:fix": "eslint --fix ./src/**/*.{js,jsx,ts,tsx}",
